@@ -173,7 +173,11 @@ fn load_texture_image(path: &Path) -> anyhow::Result<Image> {
     // Normalize to 8-bit RGBA so the texture uses a widely supported GPU format.
     // Decoded 16-bit images would otherwise need the TEXTURE_FORMAT_16BIT_NORM feature.
     let rgba = image::DynamicImage::ImageRgba8(dynamic.into_rgba8());
-    Ok(Image::from_dynamic(rgba, true, RenderAssetUsages::default()))
+    Ok(Image::from_dynamic(
+        rgba,
+        true,
+        RenderAssetUsages::default(),
+    ))
 }
 
 /// Loads an object source from a path.
