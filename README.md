@@ -256,6 +256,11 @@ Current workflow:
 The terminal image is fully GPU-resident: the only data crossing from the main
 world to the render world each frame is the recorded scene, not pixels.
 
+## Touchscreen
+
+In 3D mode, drag with one finger to rotate the terminal. Move two fingers together to pan, and
+pinch them to zoom. Swipe diagonally from the bottom-left toward the top-right to enter Mobius mode.
+
 ## Endorsements
 
 - _"This is like a legitimately cool project but also I just spent like 20 minutes adjusting the config for the rat spinning to see him spin faster and more erratically and it cracked me up"_ - [@vimlena.com](https://bsky.app/profile/vimlena.com/post/3mkoshbzpvs2y)
